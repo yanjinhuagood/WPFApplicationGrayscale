@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="WPFDevelopers.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPFDevelopers" Version="1.0.9.4-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrayscaleEffect\GrayscaleEffect.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="WPFDevelopers.ico" />
+  </ItemGroup>
+
+</Project>
